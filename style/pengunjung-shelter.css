@@ -1,0 +1,32 @@
+body {
+    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+}
+table {
+    margin: 100px 20px 30px 20px;
+}
+tr {
+    text-align: left;
+}
+#judul {
+    margin: 30px;
+    padding-top: 5px;
+}
+#kotak-tengah {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.8);
+    width: 365px;
+    height: auto;
+    margin: 6rem auto 8rem auto;
+    text-align: center;
+}
+#foto-profil {
+    width: 130px;
+    border: 3px solid #2dbd6e;
+}
+.isian {
+    width: 100%;
+}
+.submit {
+    margin-bottom: 30px;
+}

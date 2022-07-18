@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <!-- decoder, judul, viewport, dan style -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+        window.addEventListener ("beforeunload", function(e) {
+            document.getElementById("ikon-loading").className = "loading";
+            document.getElementById("body-loading").className = "body-load";
+        }, false);
+        window.getElementByClassName("goup").addEventListener ("click", function(e) {
+            window.scrollTo({top: 0, behavior: "smooth"});
+        }, false);
+    </script>
+    <style>
+    @keyframes goup {
+        0% {
+            border-radius: 0 0 0 0;
+        }
+        25% {
+            border-radius: 50% 0 0 0;
+        }
+        50% {
+            border-radius: 50% 50% 0 0;
+        }
+        75% {
+            border-radius: 50% 50% 50% 0;
+        }
+        100% {
+            border-radius: 50% 50% 50% 50%;
+        }
+    }
+    @keyframes load {
+        0% {
+            border-radius: 0 0 0 0;
+            background: #005500;
+            transform: rotate(0deg);
+        }
+        25% {
+            border-radius: 50% 0 0 0;
+            background: #007700;
+            transform: rotate(45deg);
+        }
+        50% {
+            border-radius: 50% 50% 0 0;
+            background: #009900;
+            transform: rotate(90deg);
+        }
+        75% {
+            border-radius: 50% 50% 50% 0;
+            background: #00bb00;
+            transform: rotate(135deg);
+        }
+        100% {
+            border-radius: 50% 50% 50% 50%;
+            background: #00dd00;
+            transform: rotate(180deg);
+        }
+    }
+    .body-load {
+        background: rgb(0, 0, 0, 0.8);
+        blur(5px);
+    }
+    .loading {
+        top: 30%;
+        left: calc(50% - 6em);
+        margin-right: calc(50% - 6em);
+        transform: translate(-50%, -50%);
+        animation: load 2.5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+        content: " ";
+        display: block;
+        position: fixed;
+        z-index: 10;
+        background: url("../picture/t-pose-senko.png") center no-repeat;
+        height: 200px;
+        width: 200px;
+        outline: 1px solid transparent;
+    }
+    .goup {
+        border: none;
+        background: lime;
+        transition: width 1s, transform 1s;
+        position: fixed;
+        bottom: 30px;
+        right: 0;
+        padding: 5px;
+        z-index: 10;
+    }
+    .goup:hover {
+        width: 30px;
+        height: 30px
+        margin-right: 10px;
+        border: 1px solid transparent;
+        transform: rotate(90deg);
+        animation-name: goup;
+        animation-duration: 1s;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<div id="body-loading">
+    <div id="ikon-loading"></div>
+</div>
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="goup"> < </button>
+</html>

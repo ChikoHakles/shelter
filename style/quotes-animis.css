@@ -1,0 +1,27 @@
+body {
+    background: url("../picture/Yakkun.full.1531987.jpg");
+    text-align: right;
+}
+button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+#wrapper {
+    float: right;
+    margin: 3em 3em 5em 40em;
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 10px 0px 8px rgb(0, 0, 0, 0.8);
+    padding: 0.3em 2em 4em 1em;
+    color: #ff66ff;
+    font-size: 1em;
+}
+#periwayat {
+    text-style: none;
+    position: absolute;
+    text-align: left;
+}
+#quote {
+    
+}

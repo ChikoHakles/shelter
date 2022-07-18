@@ -1,0 +1,123 @@
+
+    @keyframes profilFade {
+        0% {
+            right: -100px;
+            opacity: 0%;
+        }
+        100% {
+            right: 20px;
+            opacity: 100%;
+        }
+    }
+    @keyframes info-appear {
+        0% {
+            opacity: 0;
+            left: -100px;
+        }
+        100% {
+            opacity: 1;
+            left: inherit;
+        }
+    }
+    @keyframes ganjilFade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes genapFade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    table#data th {
+        background-color: gray;
+        height: 50px;
+    }
+    table#data tr {
+        background-color: white;
+    }
+    table#data tr:hover {
+        background-color: #b3ffb3;
+    }
+    table#data {
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+    table#preview {
+        display: none;
+        position: relative;
+        text-align: left;
+        animation-name: info-appear;
+        animation-duration: 3s;
+    }
+    #profil-container img {
+        height: 120px;
+    }
+    #profil-container {
+        height: auto;
+        width: auto;
+        padding: 20px 20px 0px;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        margin-top: -180px;
+        box-shadow: 3px 2px 6px rgb(0, 0, 0, 0.8);
+        animation-name: profilFade;
+        animation-duration: 3s;
+        position: relative;
+        float: right;
+        position: fixed;
+        transition: height 2s ease 1s, width 2s ease 1s;
+        z-index: 2;
+        right: 10px;
+    }
+    #profil-container:hover #nama-preview {
+        display: none;
+    }
+    #profil-container:hover #info {
+        display: block;
+        float: right;
+    }
+    #profil-container:hover img {
+        float: left;
+    }
+    #profil-container:hover table#preview {
+        display: block;
+    }
+    #profil-container:hover {
+        width: auto;
+        padding-bottom: 20px;
+    }
+    #info {
+        display: none;
+        margin: auto auto auto 30px;
+    }
+    #info h3 {
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+    .content {
+        background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    }
+    .edit-hapus {
+        width: 70px;
+    }
+    .ganjil {
+        position: relative;
+        animation-name: ganjilFade;
+        animation-duration: 3s;
+    }
+    .genap {
+        position: relative;
+        animation-name: genapFade;
+        animation-duration: 3s;
+    }

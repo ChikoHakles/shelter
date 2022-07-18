@@ -1,0 +1,21 @@
+body {
+    background: url("../picture/top-view-papers-with-dried-leaves.jpg") top right;
+}
+button {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+#quote {
+    border-left-style: dashed;
+    border-left-color: brown;
+    padding: 10px 0em 10px 0.7em;
+}
+#wrapper {
+    margin: 3em 3em auto 3em;
+    font-size: 1em;
+    max-width: 25em;
+}
+#periwayat {
+    text-align: right;   
+}

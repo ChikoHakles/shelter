@@ -1,0 +1,20 @@
+body {
+    background: url("../picture/beach-2179624_1920.jpg") center no-repeat;
+}
+button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+#wrapper {
+    background: #fefafc;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 6em 3em 8em 3em;
+    padding: 3em;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0, 1);
+    color: #ff6600;
+    font-size: 1em;
+}

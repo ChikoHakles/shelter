@@ -1,0 +1,30 @@
+body {
+    background: url("../picture/Lighthouse.jpg");
+}
+button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+#wrapper {
+    float: right;
+    top: 17em;
+    text-align: right;
+    margin: 3em 3em 3em 35em;
+    background: #fbfbfb;
+    border: 2px inset black;
+    padding: 0em 2em 0em 2em;
+    color: #00994d;
+    text-shadow: 2px 1px 1px rgb(0, 0, 0, 0.3);
+    font-size: 1em;
+    position: relative;
+}
+#pemanis {
+    background: url("../picture/tombol.png") right no-repeat;
+    width: 100%;
+    height: 17px;
+    right: -2px;
+    top: -17px;
+    border-radius: 5px;
+    position: absolute;
+}
